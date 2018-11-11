@@ -21,5 +21,15 @@ namespace CodePortfolioStreamWriterReader
         {
             lbRetrieved.Text = "";
         }
+        private void btStore_Click(object sender, EventArgs e) {
+            using (StreamWriter sw = new StreamWriter("StoredText.txt")) {
+                sw.WriteLine(tbTest.Text);
+            }
+            tbTest.Clear();
+        }
+
+        private void btRetrieve_Click(object sender, EventArgs e) {
+            using (StreamReader sr = new StreamReader("StoredText.txt")) {
+                lbRetrieved.Text = sr.ReadLine();
     }
 }
