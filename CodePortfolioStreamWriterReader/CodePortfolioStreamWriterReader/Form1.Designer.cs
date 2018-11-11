@@ -69,6 +69,7 @@
             this.btStore.TabIndex = 3;
             this.btStore.Text = "Store";
             this.btStore.UseVisualStyleBackColor = true;
+            this.btStore.Click += new System.EventHandler(this.btStore_Click);
             // 
             // btRetrieve
             // 
@@ -78,6 +79,7 @@
             this.btRetrieve.TabIndex = 4;
             this.btRetrieve.Text = "Retrieve";
             this.btRetrieve.UseVisualStyleBackColor = true;
+            this.btRetrieve.Click += new System.EventHandler(this.btRetrieve_Click);
             // 
             // Form1
             // 
